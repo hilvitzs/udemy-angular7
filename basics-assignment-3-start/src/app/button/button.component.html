@@ -1,0 +1,10 @@
+<button (click)='onClick()'>Display Details</button>
+<p *ngIf='visible'>Secret Password = tuna</p>
+<!-- <ul>
+  <li *ngFor='let click of clicks'></li>
+</ul> -->
+<p 
+  *ngFor='let date of dates; let i = index;' 
+  [ngStyle]='{backgroundColor: changeColor(i)}'
+  [ngClass]='getColor(i)'
+  >{{ date }}</p>
